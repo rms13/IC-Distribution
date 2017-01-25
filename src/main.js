@@ -52,6 +52,7 @@ function onLoad(framework) {
 
     for (var i = 0; i < settings.treeHeight; i += settings.leafHeight) {
       var mesh = new THREE.Mesh(cylinder, material);
+	  //mesh.scale.set(i+1,1,i+1);
       var params = {
         min: 0,
         max: settings.treeHeight,
